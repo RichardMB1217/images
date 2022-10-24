@@ -41,8 +41,8 @@
 		// loop through the array of files and print them all in a list
 		for($index=0; $index < $indexCount; $index++) {
 			$extension = substr($dirArray[$index], -3);
-			if ($extension == 'jpeg'){ // list only jpegs
-				echo '<li><img src="images/' . $dirArray[$index] . '" alt="Image" /><span>' . $dirArray[$index] . '</span>';
+			if ($extension !== 'a'){ // list only jpegs
+				echo '<li><center><img src="images/' . $dirArray[$index] . '" width="500" align="middle" /></center><span>' . '</span>';
 			}	
 		}
 		?>
