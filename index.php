@@ -42,7 +42,7 @@
 		for($index=0; $index < $indexCount; $index++) {
 			$extension = substr($dirArray[$index], -3);
 			if ($extension !== 'a'){ // list only jpegs
-				echo '<li><center><img src="images/' . $dirArray[$index] . '" width="500" align="middle" /></center><span>' . '</span>';
+				echo '<li><center><img src="images/' . $dirArray[$index] . '" width="500" align="middle" alt="Welcome Back" /></center><span>' . '</span>';
 			}	
 		}
 		?>
