@@ -16,14 +16,14 @@
 */
 
 return array(
-    'folderPath' => "media/",
+    'folderPath' => "images/",
     'imgTypes' => "*.jpg,*.JPG,*.jpeg,*.JPEG,*.png,*.PNG,*.gif,*.GIF",
     'vidTypes' => "*.avi,*.AVI,*.mp4,*.MP4,*.mov,*.MOV",
     'audioTypes' => "*.mp3,*.MP3,*.ogg,*.OGG",
     'sortByName' => true,
     'reverseOrder' => false,
     'displayDate' => true,
-    'dateFormat' => "F d Y",
+    'dateFormat' => "d F Y",
     'usePagination' => false,
-    'mediaPerPage' => 5
+    'mediaPerPage' => 7
 );
