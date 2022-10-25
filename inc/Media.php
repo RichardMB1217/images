@@ -131,7 +131,6 @@ class Media {
             <div class="media image">
                 <img src="$image" alt="$mediaName" title="$mediaName">
             </div>
-            <div class="media-label">$label</div>
         </li>
 EOT;
     }
@@ -158,7 +157,6 @@ EOT;
                     Your browser does not support the $type element.
                 </$type>
             </div>
-            <div class="media-label">$label</div>
         </li>
 EOT;
     }
