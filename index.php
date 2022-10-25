@@ -1,54 +1,22 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Title</title>
-		<meta name="language" content="en" />  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Show media in folder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="inc/style.css">
+    <link rel="shortcut icon" type="image/png" href="inc/favicon.png"/>
+    <!-- style for media insertion -->
+    <link rel="stylesheet" type="text/css" href="inc/ins-media.css">
+</head>
+<body>
+    <header><div><h1>Show all media in my folder</h1></div></header>
 
-		<meta name="description" content="" />  
+    <!-- media insertion -->
+    <?php include "inc/ins-media.php"; ?>
 
-		<meta name="keywords" content="" />
-		<style type="text/css">
-			ul li {list-style: none; margin-bottom: 15px;}
-			ul li img {display: block;}
-			ul li span {display: block;}
-		</style>
-	</head>
-	<body>
-
-	<?php
-
-	// open this directory 
-	$myDirectory = opendir("images");
-
-	// get each entry
-	while($entryName = readdir($myDirectory)) {
-		$dirArray[] = $entryName;
-	}
-
-	// close directory
-	closedir($myDirectory);
-
-	//	count elements in array
-	$indexCount	= count($dirArray);
-
-	?>
-
-	<ul>
-
-		<?php
-		// loop through the array of files and print them all in a list
-		for($index=0; $index < $indexCount; $index++) {
-			$extension = substr($dirArray[$index], -3);
-			if ($extension !== '.'){ // list only jpegs
-				echo '<li><center><img src="images/' . $dirArray[$index] . '" width="700" align="middle" alt="Welcome Back" /></center><span>' . '</span>';
-			}	
-		}
-		?>
-
-	</ul>	
-
-
+    <footer><div><?php echo date("Y"); ?> // source code <a target="_blank" href="https://github.com/dvdn/show-all-media-in-a-folder-with-php">dvdn/show-all-media-in-a-folder-with-php</a></div></footer>
 </body>
 </html>
