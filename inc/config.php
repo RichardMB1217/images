@@ -20,10 +20,10 @@ return array(
     'imgTypes' => "*.jpg,*.JPG,*.jpeg,*.JPEG,*.png,*.PNG,*.gif,*.GIF",
     'vidTypes' => "*.avi,*.AVI,*.mp4,*.MP4,*.mov,*.MOV",
     'audioTypes' => "*.mp3,*.MP3,*.ogg,*.OGG",
-    'sortByName' => true,
+    'sortByName' => false,
     'reverseOrder' => false,
-    'displayDate' => true,
+    'displayDate' => false,
     'dateFormat' => "d F Y",
-    'usePagination' => false,
+    'usePagination' => true,
     'mediaPerPage' => 7
 );
